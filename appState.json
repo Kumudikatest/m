@@ -1,0 +1,152 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "0fb76b90-d3a6-4929-be00-61ce5cfee35a": {
+        "id": "0fb76b90-d3a6-4929-be00-61ce5cfee35a",
+        "parent": null,
+        "name": "m.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "m.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "m"
+        },
+        "triggers": [
+          {
+            "resourceName": "s3comsigmatest318300609668firstnlastnusEast1",
+            "config": {
+              "type": "s3:ObjectCreated:*",
+              "keyPrefix": "",
+              "keySuffix": ""
+            }
+          }
+        ]
+      },
+      "4bc21607-d5e5-4fc8-9039-27bf40236fdc": {
+        "id": "4bc21607-d5e5-4fc8-9039-27bf40236fdc",
+        "parent": null,
+        "name": "Authorizer.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Authorizer.js"
+      }
+    },
+    "openFiles": [
+      "0fb76b90-d3a6-4929-be00-61ce5cfee35a"
+    ],
+    "currentFileId": "0fb76b90-d3a6-4929-be00-61ce5cfee35a",
+    "resources": {
+      "s3as2TestLahiru": {
+        "name": "s3as2TestLahiru",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "ap-northeast-2",
+            "name": "as2-test-lahiru"
+          }
+        }
+      },
+      "storagehirutest01": {
+        "name": "storagehirutest01",
+        "type": "CloudStorage",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "hirutest01"
+          }
+        }
+      },
+      "s3comsigmatest318300609668firstnlastnusEast1": {
+        "name": "s3comsigmatest318300609668firstnlastnusEast1",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "ap-northeast-2",
+            "name": "com.sigma.test.318300609668.firstnlastn.us-east-1"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "GCP_SERVICE_ACCOUNT_KEY",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "GCP_PROJECT",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        },
+        "googleapis": {
+          "name": "googleapis",
+          "language": "nodejs",
+          "version": "29.0.0",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "m",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-northeast-2",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1591781710660
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "m",
+      "url": "https://github.com/Kumudikatest/m"
+    }
+  }
+}
